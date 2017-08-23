@@ -1,0 +1,922 @@
+/********* GENERAL **********/
+
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+*:focus {
+    outline: none;
+}
+
+html {
+    background-color: #fff;
+    color: #2c3e50;
+    font-family: 'Josefin Sans', 'Arial', sans-serif;
+    font-weight: 400;
+    font-size: 22px;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+}
+
+.row {
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+.clearfix {zoom: 1;}
+.clearfix:after {
+    content: '.';
+    display: block;
+    height: 0;
+    visibility: hidden;
+    clear: both;
+}
+
+a,
+a:link,
+a:visited {
+    color: #fff;
+    text-decoration: none;
+}
+
+/********** HEADINGS **********/
+
+h2{
+    font-size: 230%;
+    word-spacing: 2px;
+    text-align: center;
+    margin: 40px 0 50px 0;
+    letter-spacing: 1px;
+}
+
+h2:after{
+    content: " ";
+    display: block;
+    height: 3px;
+    background-color: #8358b5;
+    width: 170px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+h3{
+    font-size: 180%;
+    word-spacing: 2px;
+    text-align: left;
+    margin: 40px 0;
+    letter-spacing: 1px;
+    color: #fff;
+}
+
+h4{
+    font-size: 150%;
+    word-spacing: 2px;
+    text-align: left;
+    margin: 15px 0;
+    padding: 20px 0px 0px 0px;
+    letter-spacing: 1px;
+    color: #2c3e50;
+}
+
+.line{
+	height: 1px;
+    background-color: #2c3e50;
+    width: 498px;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.line:before{
+	content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 5px;
+    width: 100px;
+    max-width: 30%;
+    background: #8358b5;
+}
+
+
+/*h1 {
+    margin: 0;
+    color: #fff;
+    font-size: 240%;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}*/
+
+
+/********* HEADER **********/
+
+header {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(img/heroimg.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/heroimg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+}
+
+.logo {
+    float: left;
+    margin: 25px 0px;
+    height: auto;
+}
+
+.logo-sticky {
+    display: none;
+    float: left;
+    margin-top: 7px;
+    height: auto;
+}
+
+/***** main nav ****/
+
+.main-nav {
+    float: right;
+    list-style: none;
+    margin: 30px 0px 0px 0px;
+}
+
+.main-nav li {
+    display: inline-block;
+    color: #fff;
+    padding: 0px 0px 0px 80px;
+    font-size: 110%;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited{
+    text-decoration: none;
+    color: #fff;
+}
+
+/***** sticky nav *****/
+
+.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    background-color: rgba(227, 227, 227, 0.95);
+    -webkit-box-shadow: 0px 2px 2px #c1bfbf;
+    box-shadow: 0px 2px 2px #c1bfbf;
+    z-index: 9999;
+}
+
+.sticky .main-nav li a:link,
+.sticky .main-nav li a:visited{
+    text-decoration: none;
+    color: #2c3e50;
+}
+
+.sticky .main-nav {
+    float: right;
+    list-style: none;
+    margin: 10px 0px 0px 0px;
+}
+
+.sticky .sliding-u-l-r-l:after {
+    background: #8358b5;
+}
+
+.sticky .sliding-u-l-r-l:hover:before {
+    background: #8358b5;
+}
+
+.sticky .logo { display: none; }
+.sticky .logo-sticky { display: block; }
+
+/* Mobile navigation */
+.mobile-nav-icon {
+    float: right;
+    margin-top: 30px;
+    cursor: pointer;
+    display: none;
+}
+
+.mobile-nav-icon i {
+    color: #fff;
+    font-size: 200%;
+}
+
+/*******************************/
+
+.main-heading {
+    color: #fff;
+    font-size: 300%;
+    letter-spacing: 1px;
+    position: absolute;
+    font-weight: 400;
+    text-shadow: 4px 5px 15px #72570d;
+    position: relative;
+}
+
+.hero-text {
+    margin: 50px 0px 0px 0px;
+}
+
+.soul-heading {
+    top: 23%;
+    left: 57%;
+}
+
+.of-heading {
+    top: 34%;
+    left: 72%;
+}
+
+.jazzz-heading {
+    top: 45%;
+    left: 60%;
+}
+
+.music-heading {
+    top: 56%;
+    left: 75%;
+}
+
+/****  SLIDE IN SLIDE OUT ****/
+
+.sliding-u-l-r-l {
+    display: inline-block;
+    position: relative;
+    padding-bottom: 7px;
+}
+.sliding-u-l-r-l:before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 0;
+    -webkit-transition: width 0s ease, background .5s ease;
+    transition: width 0s ease, background .5s ease;
+}
+.sliding-u-l-r-l:after {
+    content: '';
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 2px;
+    width: 0;
+    background: #eac113; /*#f0e66c;*/
+    -webkit-transition: width .5s ease;
+    transition: width .5s ease;
+}
+.sliding-u-l-r-l:hover:before {
+    width: 100%;
+    background: #fff;
+    -webkit-transition: width .5s ease;
+    transition: width .5s ease;
+}
+.sliding-u-l-r-l:hover:after {
+    width: 100%;
+    background: transparent;
+    -webkit-transition: all 0s ease;
+    transition: all 0s ease;
+}
+
+/********* JAZZ IN 21 St Centuary *********/
+
+#TventyFirstSt {
+    background-color: #e3e3e3;
+}
+
+.today-p {
+    text-align: justify;
+    word-spacing: 1px;
+}
+
+.section-padding {
+    padding: 30px 0;
+}
+
+.jazz-21-pic {
+    text-align: center;
+}
+
+.TFS-Jazz {
+    width: 75%;
+    height: auto;
+}
+
+.TFS-Truba {
+    width: 60%;
+    height: auto;
+    margin: 10px 0;
+}
+
+.TFS-Man {
+    width: 60%;
+    height: auto;
+    border-radius: 50%;
+}
+
+/********* FESTIVALS ***************/
+
+.festivals {
+    background: rgba(235,233,249,1);
+    background: radial-gradient(ellipse at center, rgba(235,233,249,1) 0%, rgba(170,168,219,1) 100%);
+}
+
+.ion-radio-waves {
+    padding: 0 20px;
+    color: #8358b5;
+}
+
+.festivals-heading {
+    text-align: center;
+    margin: -40px 0px 48px 0px;
+}
+
+.festivals-paragraph-1 {
+    text-align: justify;
+    line-height: 105%;
+}
+
+.festivals-paragraph-2 {
+    text-align: justify;
+    padding: 0px 0px 60px 0px;
+}
+
+/*****************Gallery Montreal *************/
+
+.img-second { font-size: 100%; }
+
+.container img {
+  max-width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.container {
+    width: 100%;
+    position: relative;
+    margin: 50px 0 0 0;
+}
+
+.thumbnails {
+  list-style: none;
+  font-size: 0;
+  margin-left: -2%;
+}
+
+.thumbnails li {
+  display: inline-block;
+  width: 23%;
+  margin-left: 2%;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.thumbnails li:hover .item-hugger { background: white; }
+
+.thumbnails li:hover .item-hugger .title { color: #000; }
+
+.thumbnails input[name="select"] { display: none; }
+
+.thumbnails .item-hugger {
+  position: relative;
+  height: 140px;
+  margin: 20px 0;
+  background: #f2f2f2;
+  -webkit-transition: all 150ms ease-in-out;
+  transition: all 150ms ease-in-out;
+}
+
+.thumbnails label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  cursor: pointer;
+}
+
+.thumbnails .title {
+  padding: 20px 0 0;
+  font-size: 18px;
+  color: #555;
+  -webkit-transition: all 150ms linear;
+  transition: all 150ms linear;
+}
+
+.thumbnails .thumb-image {
+  height: 100px;
+  padding: 20px 0;
+  display: none;
+}
+
+.thumbnails .content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 400px;
+  padding: 30px;
+  opacity: 0;
+  -webkit-transition: all 150ms linear;
+  transition: all 150ms linear;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.thumbnails .content .title {
+  font-size: 60px;
+  font-weight: 400;
+  display: inline-block;
+  color: #555;
+  border-bottom: 6px solid #8358b5;
+  padding: 50px 10px 0;
+  text-transform: uppercase;
+}
+
+.thumbnails input[name="select"]:checked + .item-hugger {
+  height: 180px;
+  margin: 0;
+  background: white;
+}
+
+.thumbnails input[name="select"]:checked ~ .content { opacity: 1; }
+
+.white-box {
+  background: white;
+  height: 355px;
+}
+
+/************* Galery Nishville ************/
+
+.slides {
+    padding: 0;
+    width: 100%;
+    height: 385px;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    margin: 70px 0 0 0;
+}
+
+.slides * {
+    user-select: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+}
+
+.slides input { display: none; }
+
+.slide-container { display: block; }
+
+.slide {
+    top: 0;
+    opacity: 0;
+    width: 100%;
+    height: 400px;
+    display: block;
+    position: absolute;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    -webkit-transition: all .7s ease-in-out;
+    transition: all .7s ease-in-out;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+}
+
+.nav label {
+    width: 100px;
+    height: 100%;
+    display: none;
+    position: absolute;
+    opacity: 0;
+    z-index: 9;
+    cursor: pointer;
+    -webkit-transition: opacity .2s;
+    transition: opacity .2s;
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 100pt;
+    text-align: center;
+    line-height: 400px;
+    font-family: "Varela Round", sans-serif;
+    /* background-color: rgba(255, 255, 255, .3); */
+    text-shadow: 0px 0px 15px rgb(119, 119, 119);
+}
+
+.slide:hover + .nav label { opacity: 0.5; }
+
+.nav label:hover { opacity: 1; }
+
+.nav .next { right: 0; }
+
+input:checked + .slide-container .slide {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out;
+}
+
+input:checked + .slide-container .nav label { display: block; }
+
+.nav-dots {
+	width: 100%;
+	bottom: 9px;
+	height: 11px;
+	display: block;
+	position: absolute;
+	text-align: center;
+}
+
+.nav-dots .nav-dot {
+	top: -5px;
+	width: 11px;
+	height: 11px;
+	margin: 0 4px;
+	position: relative;
+	border-radius: 100%;
+	display: inline-block;
+	background-color: rgba(255, 255, 255, 0.8)
+}
+
+.nav-dots .nav-dot:hover {
+	cursor: pointer;
+	background-color: rgba(0, 0, 0, 0.8);
+}
+
+input#img-1:checked ~ .nav-dots label#img-dot-1,
+input#img-2:checked ~ .nav-dots label#img-dot-2,
+input#img-3:checked ~ .nav-dots label#img-dot-3,
+input#img-4:checked ~ .nav-dots label#img-dot-4 {
+	background: rgba(0, 0, 0, 0.8);
+}
+
+/********** History Of Jazz Music *********/
+
+#HistoryOfJazzMusic {
+    text-align: justify;
+    word-spacing: 1px;
+    background-color: #e3e3e3;
+}
+
+.History-p  {
+    margin-bottom: 50px;
+}
+
+/********** Duke Ellington PART *********/
+
+.go-unvisible { display: none; }
+
+.duke-ellington {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url(img/dukeellington.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/dukeellington.jpg);
+    background-repeat: no-repeat;
+    //background-position: left;
+    background-size: cover;
+    width: 100%;
+    height: auto;
+    background-attachment: fixed;
+}
+
+.duke-ellington ul {
+    color: #fff;
+    list-style: none;
+    line-height: 40px;
+    font-size: 75%;
+    font-weight: 300i;
+}
+
+.duke-p {
+    color: white;
+    padding: 20px 0;
+    width: 50%;
+}
+
+.ion-arrow-right-b {
+    padding: 20px;
+    font-size: 100%;
+}
+
+.duke-ellington li a:hover,
+.duke-ellington li a:active {
+    color: #8358b5;
+}
+
+/********** Louis Armstrong PART *********/
+
+.louis-armstrong {
+    width: 100%;
+    height: auto;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url(img/louisarmstrong.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(img/louisarmstrong.jpg);
+    //background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.louis-armstrong ul {
+    color: #fff;
+    list-style: none;
+    line-height: 40px;
+    font-size: 75%;
+    font-weight: 300i;
+    float: right;
+    padding: 0px 20px 0px 0px;
+}
+
+.louis-armstrong ul li{
+    float: right;
+}
+
+.ion-arrow-left-b {
+    padding: 20px;
+    font-size: 100%;
+}
+
+
+.louis-p {
+    color: white;
+    padding: 20px 0;
+    float: right;
+    width: 50%;
+}
+
+.louis-armstrong li a:hover,
+.louis-armstrong li a:active {
+    color: #8358b5;
+}
+
+/********** Miles Davis PART *********/
+
+.miles-davis {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url(img/miles-davis.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/miles-davis.jpg);
+    background-repeat: no-repeat;
+    //background-position: left;
+    background-size: cover;
+    width: 100%;
+    height: auto;
+    background-attachment: fixed;
+}
+
+.miles-davis ul {
+    color: #fff;
+    list-style: none;
+    line-height: 40px;
+    font-size: 75%;
+    font-weight: 300i;
+}
+
+.miles-p {
+    color: white;
+    padding: 20px 0;
+    width: 50%;
+}
+
+.ion-arrow-right-b {
+    padding: 20px;
+    font-size: 100%;
+}
+
+.miles-davis li a:hover,
+.miles-davis li a:active {
+    color: #8358b5;
+}
+
+/************** INSTRUEMT *************/
+
+.pic-instrument { /* ff3.6+ */ /* safari4+,chrome */ /* safari5.1+,chrome10+ */ /* opera 11.10+ */ /* ie10+ */
+    background:radial-gradient(ellipse at center, rgba(71,70,70,1) 0%, rgba(94,94,94,1) 100%); /* w3c */
+}
+
+.instrument {
+    width: 64px;
+    height: 64px;
+}
+
+/********* CONTACT - FORM *************/
+
+#contact-form {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.1)), to(rgba(0, 0, 0, 0.1))), url(img/6924502-record-vinyl-music-player.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(img/6924502-record-vinyl-music-player.jpg);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: cover;
+    width: 100%;
+    height: auto;
+}
+
+.go-right{
+    text-align: right;
+}
+
+.go-right-send {
+    text-align: right;
+}
+
+#contact-form div a {
+    color: #8358b5;
+    border: 1px solid #8358b5;
+    padding: 3px 30px;
+    -webkit-transition: color 0.5s, background-color 0.5s, border 0.5s, -webkit-box-shadow 0.5s;
+    transition: color 0.5s, background-color 0.5s, border 0.5s, -webkit-box-shadow 0.5s;
+    transition: color 0.5s, background-color 0.5s, border 0.5s, box-shadow 0.5s;
+    transition: color 0.5s, background-color 0.5s, border 0.5s, box-shadow 0.5s, -webkit-box-shadow 0.5s;
+}
+
+#contact-form div a:hover,
+#contact-form div a:active {
+    color: #fff;
+    background-color: #8358b5;
+    border: 1px solid transparent;
+    -webkit-box-shadow: 3px -2px 10px #bfbdbd;
+    box-shadow: 3px -2px 10px #bfbdbd;
+}
+
+input[type=text] {
+    width: 100%;
+    border-radius: 0px;
+    background-color: rgba(123, 123, 123, 0.5);
+    padding: 5px;
+    border: 1px solid #8358b5;
+    font-size: 60%;
+    margin: 10px 0;
+    color: #fff;
+}
+
+input[type=email] {
+    width: 100%;
+    border-radius: 0px;
+    background-color: rgba(123, 123, 123, 0.5);
+    padding: 5px;
+    border: 1px solid #8358b5;
+    font-size: 60%;
+    margin: 10px 0;
+    color: #fff;
+}
+
+textarea {
+    width: 100%;
+    height: 150px;
+    border-radius: 0px;
+    background-color: rgba(123, 123, 123, 0.5);
+    padding: 5px;
+    border: 1px solid #8358b5;
+    font-size: 60%;
+    margin: 10px 0;
+    color: #fff;
+}
+
+.contact-paragraph {
+    line-height: 185%;
+    text-align: center !important;
+    color: #fff;
+    text-shadow: 1px 1px 3px black;
+    font-size: 125%;
+    padding: 0px 50px;
+}
+
+.contact-img {
+    width: 30%;
+    height: auto;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+/**************** FOOTER *****************/
+
+footer {
+    background-color: #c3c3c3;
+    width: 100%;
+    height: auto;
+}
+
+.social-networks {
+    text-align: center;
+    margin: 50px 0px 25px 0px;
+}
+
+.social-networks img {
+    margin: 0px 25px;
+}
+
+.social-networks img:hover,
+.social-networks img:active {
+    opacity: 0.7;
+}
+
+.email {
+    display: inline-block;
+    letter-spacing: 1px;
+}
+
+.email:hover {
+    text-decoration: underline;
+}
+
+.go-center a {
+    color: #2c3e50;
+}
+
+.go-center {
+    text-align: center;
+}
+
+.footer-pic-left {
+    text-align: left;
+}
+
+.footer-pic-right {
+    text-align: right;
+}
+
+.copy-right {
+    text-align: center;
+    font-size: 70%;
+    padding: 20px 0px;
+}
+
+/************* ANIMATIONS ************/
+
+.js--wp-1,
+.js--wp-2,
+.js--wp-3,
+.js--wp-4,
+.js--wp-14,
+.js--wp-15,
+.js--wp-16,
+.js--wp-17 {
+    opacity: 0;
+}
+
+.js--wp-1 {
+    -webkit-animation-delay: 1s;
+    animation-delay: 1s;
+}
+
+.js--wp-2 {
+    -webkit-animation-delay: 1.5s;
+    animation-delay: 1.5s;
+}
+
+.js--wp-3 {
+    -webkit-animation-delay: 2s;
+    animation-delay: 2s;
+}
+
+.js--wp-4 {
+    -webkit-animation-delay: 2.5s;
+    animation-delay: 2.5s;
+}
+
+.js--wp-13 {
+    -webkit-animation-delay: 0.8s;
+    animation-delay: 0.8s;
+}
+
+.js-wp-5 {
+    -webkit-animation-delay: 0.5s;
+    animation-delay: 0.5s;
+}
+
+.js-wp-6,
+.js-wp-7 {
+    -webkit-animation-delay: 0.7s;
+    animation-delay: 0.7s;
+}
+
+.js-wp-1.animated,
+.js-wp-2.animated,
+.js-wp-3.animated,
+.js-wp-4.animated,
+.js-wp-5.animated,
+.js-wp-6.animated,
+.js-wp-7.animated,
+.js-wp-14.animated,
+.js-wp-15.animated,
+.js-wp-16.animated,
+.js-wp-17.animated {
+    opacity: 1;
+}

@@ -1,0 +1,495 @@
+/*********** MOST BIG DESCTOPs **********/
+@media only screen and (max-width: 1920px){
+    html { font-size: 28px; }
+    .hero-text { margin: 100px 0 0 0; }
+    .jazz-21-pic { margin: 0px 0 0px 0; }
+    .container { margin: 60px 0 0 0; }
+    .thumbnails {
+        width: 80%;
+        margin: 0 auto;
+    }
+    .thumbnails li {
+        width: 23%;
+        margin-left: 2%;
+    }
+    .thumbnails .item-hugger {
+        height: 120px;
+        margin: 20px 0;
+    }
+    .container img { max-width: 71%; }
+    .thumbnails .content {
+        width: 100%;
+        height: 424px;
+        padding: 30px;
+    }
+    .thumbnails .content .title {
+        width: 95%;
+        padding: 50px 10px 0;
+        border-bottom: 0px solid transparent;
+    }
+    .white-box {
+        height: 385px;
+        width: 730px;
+        margin: 0 auto;
+    }
+    .slides { margin: 80px 0 0 0; }
+    .slide { height: 430px; }
+    .contact-img {
+        width: 25%;
+        margin-top: 35px;
+        margin-bottom: 15px;
+    }
+    .mans-play { width: 50%; }
+}
+
+/*********** Second MOST BIG DESCTOPs **********/
+@media only screen and (max-width: 1680px){
+    .container { margin: 100px 0 0 0; }
+    .thumbnails {
+        width: 90%;
+    }
+    .thumbnails .content {
+        width: 100%;
+        height: 426px;
+    }
+    .thumbnails .content .title {
+        width: 100%;
+    }
+    .festivals-paragraph-2,
+    .festivals-paragraph-1 { line-height: 96%; }
+}
+
+/********* Third most big desktops ************/
+@media only screen and (max-width: 1600px){
+    .hero-text { margin: 80px 0 0 0; }
+    .main-heading { font-size: 250%; }
+    .contact-paragraph { font-size: 135%; }
+}
+
+/********* Fourth most big desktops ************/
+@media only screen and (max-width: 1440px){
+    html { font-size: 26px; }
+    .container { margin: 80px 0 0 0; }
+    .thumbnails .content { height: 420px; }
+    .container img { max-width: 90%; }
+    .white-box {
+        height: 385px;
+        width: 625px;
+        margin: 0 auto;
+    }
+}
+
+/********* First most big laptop ************/
+@media only screen and (max-width: 1366px){
+    html { font-size: 22px; }
+    h1 { 25px 0; }
+    .festivals-paragraph-2,
+    .festivals-paragraph-1 { line-height: 110%; }
+    .slides { margin: 72px 0 0 0; }
+    .slide { height: 400px; }
+    .white-box {
+        height: 350px;
+        width: 540px;
+        margin: 0 auto;
+    }
+    .thumbnails .content { height: 400px; }
+    .container { margin: 40px 0 0 0; }
+    .hero-text { margin: 4% 0 0 0; }
+}
+
+/* Jugin lap top 1366px638px */
+@media only screen and (max-width: 1366px) and (max-height: 638px) {
+    .main-heading { margin: 25px 0px; }
+    
+}
+
+/* Big tablets to 1280px (widths smaller then the class row) */
+@media only screen and (max-width: 1280px){
+    html { font-size: 22px; }
+    .festivals-paragraph-2,
+    .festivals-paragraph-1 { line-height: 105%; }
+    .slides { margin: 72px 0 0 0; }
+    .slide { height: 400px; }
+    .white-box {
+        height: 350px;
+        width: 540px;
+        margin: 0 auto;
+    }
+    .thumbnails .content { height: 400px; }
+    .container { margin: 60px 0 0 0; }
+    .hero-text { margin: 5% 0 0 0; }
+    h1 { margin: 30px 0;}
+}
+
+/* Big tablets to 1200px (widths smaller then the class row) */
+@media only screen and (max-width: 1200px){
+    .main-heading { font-size: 240% }
+    .hero-text { margin: 10% 0 10% 0; }
+    .TFS-Jazz { width: 90%; }
+    .TFS-Truba { width: 85%; }
+    .TFS-Man { width: 80%; }
+    .jazz-21-pic { margin-top: 30px; }
+    .container { margin: 70px 0px 0px 0px; }
+    .thumbnails .content { height: 450px; }
+    .white-box { height: 400px; }
+    /*.row { padding: 0 2% }*/
+}
+
+/* 1024px 1366px */
+@media only screen and (max-width: 1024px) and (max-height: 1366px) {
+    .main-heading {
+        font-size: 240%;
+        margin: 40px 0px;
+    }
+    .hero-text { margin: 200px 0px 0px 0px; }
+    .main-nav { font-size: 115%; }
+}
+
+/* Small tablet to big tablet from 768px to 1023px */
+@media only screen and (max-width: 1024px){
+    .main-nav { display: block; }
+    html { font-size: 18px; }
+    .hero-text { margin: 70px 0px 0px 0px; }
+    .today-p { 
+        word-spacing: 0px;
+        line-height: 95%;
+        font-size: 100%;
+    }
+    .TFS-Truba,
+    .TFS-Man { width: 75%; }
+    .jazz-21-pic { margin-top: -17px; }
+    .thumbnails .content { height: 320px; }
+    .container { margin: 50px 0px 0px 0px; }
+    .white-box { height: 260px; width: 445px; }
+    .section-padding { 0px; }
+    .line { width: 425px; }
+    .festivals-paragraph-1,
+    .festivals-paragraph-2 {
+        font-size: 100%;
+        line-height: 100%;
+    }
+    .mans-play {
+        width: 60%;
+        margin-top: -30px;
+    }
+    .festivals-paragraph-2,
+    .festivals-paragraph-1 { line-height: 107%; }
+    .festivals-paragraph-2 { padding: 0px 0px 30px 0px; }
+    .History-p  {
+        margin-bottom: 30px;
+        font-size: 100%;
+    }
+    .slides { height: 320px; }
+    .slide { height: 333px; }
+    .instrument {
+        width: 50px;
+        height: 50px;
+    }
+    .contact-paragraph {
+        line-height: 185%;
+        font-size: 130%;
+        padding: 0px 40px;
+    }
+    .contact-img {
+        width: 35%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .social-networks {
+        text-align: center;
+        margin: 45px 0px 25px 0px;
+    }
+    .social-networks img {
+        margin: 0px 15px;
+    }
+
+}
+
+
+/* Small phones to small tablets from 481 to 767px */
+@media only screen and (max-width: 768px){
+    .col { width: 100%; }
+    html { font-size: 14px; }
+    .main-nav { display: none; }
+    .mobile-nav-icon { display: inline-block;}
+    .main-nav { 
+        float: left;
+        margin: 30px 0px 0px 50px;
+    }
+    .main-nav li {
+        display: block;
+        margin-bottom: 5px;
+    }
+    .main-nav li a:link,
+    .main-nav li a:visited {
+        display: block;
+    }
+    .sticky .main-nav { 
+        float: left;
+        margin: 10px 0px 0px 50px;
+    }
+    .sticky .mobile-nav-icon { margin-top: 10px; }
+    .sticky .mobile-nav-icon i { color: #2c3e50; }
+    
+    .sliding-u-l-r-l,
+    .sliding-u-l-r-l:after,
+    .sliding-u-l-r-l:before { display: none; }
+    
+    .hero-text { margin: 90px 0px 0px 0px; }
+    .jazz-21-pic { margin-top: 0px; }
+    
+    .logo { width: 20%; }
+    .logo-sticky {
+        width: 21%;
+        margin: 9px 0;
+    }
+    h2 { margin: 30px 0px 30px 0px; }
+    h2:after { margin-top: 15px; width: 100px; }
+    h3 { margin: -50px 0px 25px 0px; }
+    h4 { 
+        margin: 15px 0;
+        padding: 15px 0px 0px 0px;
+    }
+    .festival-headings { margin: 0px 0px 30px 0px; }
+    
+    .TFS-Jazz { width: 35%; }
+    .TFS-Truba { width: 27%; }
+    .TFS-Man {
+        width: 28%;
+        margin: 20px 0px 0px 0px;
+    }
+    .today-p {
+        line-height: 140%;
+        padding: 0 100px;
+        text-align: center;
+    }
+        .line { width: 300px; }
+    .ion-radio-waves { display: none; }
+    
+    .slides { margin: 0px 0 0 0; }
+    .festivals-heading { margin: 5px 0px 25px 0px; }
+    .festivals-paragraph-2 { padding: 0px 0px 20px 0px; }
+    .container { margin: 0px 0px 0px 0px; }
+    .thumbnails { width: 80%; }
+    .thumbnails li { margin-left: 8px; }
+    .thumbnails .content { height: 308px; }
+    .thumbnails .content .title { width: 75%; }
+    .container img { max-width: 80%; }
+    .white-box {
+        height: 258px;
+        width: 572px;
+    }
+    
+    .History-p { margin-bottom: 30px; }
+    
+    .instrument {
+        width: 35px;
+        height: 35px;
+    }
+    .duke-p,
+    .louis-p,
+    .miles-p { line-height: 100%; }
+    .miles-davis ul,
+    .louis-armstrong ul,
+    .duke-ellington ul { line-height: 30px; }
+    .go-unvisible { display: block; }
+    form {
+        width: 70%;
+        margin: 0 auto;
+    }
+    
+    .go-right-send {
+        text-align: center;
+    }
+    
+    #contact-form div a {
+        color: #fff;
+        border: 1px solid #fff;
+        padding: 3px 30px;
+        background-color: #8358b5;
+    }
+    
+    .contact-paragraph {
+        line-height: 152%;
+        padding: 0 18%;
+        margin-top: 20px;
+        color: #3c3939;
+        text-shadow: 5px 1px 11px #fff;
+    }
+    
+    .contact-img {
+        width: 20%;
+        margin-top: 0px;
+    }
+    .social-networks { margin: 35px 0px 10px 0px; }
+    .social-networks img {
+        margin: 0px 10px;
+        width: 7%;
+    }
+    .mans-play { display: none; }
+    
+    .pic-instrument { height: 40px; }
+    .instrument { display: none; }
+    
+    input[type=text] { margin: 0px; }
+    textarea { margin: 0px 0px 10px 0px;}
+}
+
+/* ----------- iPhone 6+ ----------- */
+
+/* Portrait */
+@media only screen and (max-width: 736px) { 
+    .hero-text { margin: 3% 0 0 0; }
+    .main-heading {
+        font-size: 210%;
+        margin: 15px 0px;
+    }
+    h1 { margin: 12px 0; }
+    .white-box { width: 501px; }
+    .duke-p { width: 100%; }
+    .louis-p { width: 100%; }
+    .miles-p { width: 100%; }
+    .logo-sticky { width: 20%; }
+    .mans-play { display: none; }
+    .social-networks img { width: 6%; }
+}
+
+/* ----------- Iphone 6 ------------*/
+
+/* Portrait */
+@media only screen and (max-width: 667px) { 
+    .hero-text { margin: 3% 0 0 0; }
+    .main-heading {
+        font-size: 210%;
+        margin: 12px 0px;
+    }
+    .white-box { width: 457px; }
+    .duke-p { width: 100%; }
+    .louis-p { width: 100%; }
+    .miles-p { width: 100%; }
+    h1 { margin: 18px 0; }
+    .mans-play { display: none; }
+}
+
+/* ------------- Iphone 5 and 5s -------------*/
+
+/* Portrait */
+@media only screen and (max-width: 568px) {
+    .main-nav li { margin-bottom: 0px; }
+    .main-heading {
+        font-size: 190%;
+        margin: 8px 0px;
+    }
+    .white-box { width: 450px; }
+    .duke-p { width: 100%; }
+    .louis-p { width: 100%; }
+    .miles-p { width: 100%; }
+    .hero-text { 10% 0 0 0; }
+    h1 { margin: 12px 0; }
+    .mans-play { display: none; }
+    .contact-paragraph { line-height: 130%; }
+    .duke-ellington ul { width: 104%; }
+    .logo-sticky {
+        width: 24%;
+        margin: 10px 0;
+    }
+    h3 { margin: -30px 0px 25px 0px; }
+    .thumbnails li { margin-left: 2px; }
+    .nav label { line-height: 290px; }
+    .contact-img { width: 16%; }
+}
+
+/* iPhone 2G-4 0 to 480px */
+@media only screen and (max-width: 480px) {
+    html { font-size: 12px; }
+    .logo-sticky {
+        width: 23%;
+        margin: 9px 0 0 0;
+    }
+    .hero-text { margin: 2% 0 2% 0; }
+    .line { width: 260px; }
+    .festivals-heading {
+        text-align: center;
+        margin: 0px 0px 25px 0px;
+    }
+    .History-p { margin-bottom: 20px; }
+    .duke-ellington,
+    .louis-armstrong,
+    .miles-davis { padding: 100px 0px 0px 0px; }
+    .festivals-heading { margin: 15px 0px 25px 0px; }
+    .container { margin: 20px 0px 20px 0px; }
+    .thumbnails { width: 80%; }
+    .thumbnails li { margin-left: 4px; }
+    .thumbnails .content { height: 245px; }
+    .white-box { width: 415px; }
+    .today-p { padding: 0 60px; }
+    .container img { max-width: 100%; }
+    .thumbnails .item-hugger { height: 80px; }
+    .thumbnails .title { padding: 15px 0 0; }
+    .mans-play { display: none; }
+    .duke-p { width: 100%; }
+    .louis-p { width: 100%; }
+    .miles-p { width: 100%; }
+    .thumbnails .content .title { padding: 0px; }
+    h3 { margin: -49px 0px 25px 0px; }
+}
+
+/* Portrait Iphone 6+  */
+@media only screen and (max-width: 414px){
+    .hero-text { margin: 25% 0 2% 0; }
+    .main-heading {
+        font-size: 230%;
+        margin: 20px 0px;
+    }
+    .logo { width: 30%; }
+    .thumbnails { margin-bottom: -30px; }
+    h3 { margin: -60px 0px 25px 0px; }
+    h1 { margin: 12px 0; }
+    .white-box { width: 359px; }
+    .duke-p { width: 100%; }
+    .louis-p { width: 100%; }
+    .miles-p { width: 100%; }
+    .logo-sticky { width: 20%; }
+    .mans-play { display: none; }
+    .logo-sticky {
+        width: 28%;
+        margin: 12px 0 0 0;
+    }
+    .social-networks img { width: 8%; }
+}
+
+/* Portrait Iphone 6 */
+@media only screen and (max-width: 375px) {
+    .white-box { width: 323px; }
+    .duke-p { width: 100%; }
+    .louis-p { width: 100%; }
+    .miles-p { width: 100%; }
+    h1 { margin: 12px 0; }
+    .mans-play { display: none; }
+}
+
+/* Portrait Iphone 5 and 5s */
+@media only screen and (max-width: 320px){
+    .white-box { width: 273px; }
+    .duke-p { width: 100%; }
+    .louis-p { width: 100%; }
+    .miles-p { width: 100%; }
+    .hero-text { 10% 0 0 0; }
+    h1 { margin: 12px 0; }
+    .mans-play { display: none; }
+    .contact-paragraph { line-height: 130%; }
+    .duke-ellington ul { width: 104%; }
+    .logo-sticky {
+        width: 30%;
+        margin: 10px 0;
+    }
+    .contact-img { width: 23%; }
+    .contact-paragraph {
+        line-height: 110%;
+        font-size: 110%;
+    }
+    .thumbnails li { margin-left: 2px; }
+    .main-nav { margin: 30px 0px 0px 25px; }
+    .sticky .main-nav { margin: 10px 0px 0px 25px; }
+    
+}
